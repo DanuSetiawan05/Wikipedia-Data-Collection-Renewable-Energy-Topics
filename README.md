@@ -27,7 +27,7 @@ cd Wikipedia-Data-Collection-Renewable-Energy-Topics
 pip install wikipedia wikipedia-api
 
 # 3. Run the notebook
-jupyter notebook wikipedia_renewable_energy_collector.ipynb
+jupyter notebook Wikipedia_Renewable_Energy_Collector.ipynb
 ```
 
 ## What It Does
@@ -44,7 +44,7 @@ The dataset consists of 10 Indonesian Wikipedia articles related to renewable en
 ## Project Structure
 
 ```
-wikipedia_renewable_energy_collector.ipynb   - Main analysis notebook
+Wikipedia_Renewable_Energy_Collector.ipynb  - Main analysis notebook
 artikel_energi_terbarukan.csv                - Collected dataset
 ```
 
