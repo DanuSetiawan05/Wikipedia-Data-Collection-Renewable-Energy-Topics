@@ -1,65 +1,65 @@
 # Wikipedia Data Collection - Renewable Energy Topics
 
-A Python tool that collects Indonesian-language Wikipedia articles about renewable energy ("Energi Terbarukan"), saves them into a structured CSV file, and performs basic text analysis (word count per article and most frequent words) as preparation data for a further NLP project.
+Tools Python yang mengumpulkan artikel Wikipedia berbahasa Indonesia tentang energi terbarukan ("Energi Terbarukan"), menyimpannya ke dalam file CSV terstruktur, dan melakukan analisis teks dasar (jumlah kata per artikel dan kata yang paling sering muncul) sebagai data persiapan untuk project NLP lanjutan.
 
-> This project was completed as a coursework assignment for NLP in semester 7, developed as an individual project.
+> *Project ini dikerjakan sebagai tugas mata kuliah Natural Language Processing pada semester 7, dikerjakan secara individu.*
 
 ## Tech Stack
 
 - Python
-- wikipedia / wikipedia-api - Wikipedia content retrieval
-- csv (standard library) - structured data export
-- re, collections.Counter - text analysis
+- wikipedia / wikipedia-api - pengambilan konten Wikipedia
+- csv (standard library) - ekspor data terstruktur
+- re, collections.Counter - analisis teks
 
-## Getting Started
+## Cara Menjalankan
 
 ### Prerequisites
 - Python 3.x
 
-### Installation
+### Instalasi
 
 ```bash
-# 1. Clone the repository
+# 1. Clone repository
 git clone https://github.com/DanuSetiawan05/Wikipedia-Data-Collection-Renewable-Energy-Topics.git
 cd Wikipedia-Data-Collection-Renewable-Energy-Topics
 
 # 2. Install dependencies
 pip install wikipedia wikipedia-api
 
-# 3. Run the notebook
-jupyter notebook Wikipedia_Renewable_Energy_Collector.ipynb
+# 3. Jalankan notebook
+jupyter notebook wikipedia_renewable_energy_collector.ipynb
 ```
 
-## What It Does
+## Cara Kerja
 
-1. Searches Wikipedia (Indonesian language) for articles related to "Energi Terbarukan", handling disambiguation pages and missing pages gracefully
-2. Saves the collected articles (title, URL, full content, summary) into a semicolon-delimited CSV file
-3. Reads the exported CSV back to verify integrity, then counts the number of words per article
-4. Identifies the 10 most frequently occurring words across all articles (after removing Indonesian stopwords)
+1. Mencari artikel Wikipedia (berbahasa Indonesia) terkait "Energi Terbarukan", dengan penanganan halaman disambiguasi dan halaman yang tidak ditemukan
+2. Menyimpan artikel yang terkumpul (judul, URL, konten lengkap, ringkasan) ke dalam file CSV dengan delimiter titik koma
+3. Membaca ulang file CSV yang sudah diekspor untuk verifikasi integritas data, lalu menghitung jumlah kata per artikel
+4. Mengidentifikasi 10 kata yang paling sering muncul di seluruh artikel (setelah menghapus stopword Bahasa Indonesia)
 
 ## Dataset
 
-The dataset consists of 10 Indonesian Wikipedia articles related to renewable energy, including the main "Energi terbarukan" article and related topics (non-renewable energy, specific energy sources, etc.). Wikipedia content is licensed under CC BY-SA, so collecting and reusing this data (with attribution to Wikipedia) is permitted.
+Dataset terdiri dari 10 artikel Wikipedia berbahasa Indonesia terkait energi terbarukan, termasuk artikel utama "Energi terbarukan" dan topik-topik terkait (energi tak terbarukan, sumber energi spesifik, dll). 
 
-## Project Structure
+## Struktur Project
 
 ```
-Wikipedia_Renewable_Energy_Collector.ipynb  - Main analysis notebook
-artikel_energi_terbarukan.csv                - Collected dataset
+wikipedia_renewable_energy_collector.ipynb   - Notebook analisis utama
+artikel_energi_terbarukan.csv                - Dataset hasil pengumpulan
 ```
 
-## Next Steps for NLP Analysis
+## Langkah Selanjutnya untuk Analisis NLP
 
-1. Text preprocessing - cleaning, tokenization, stopword removal
-2. Keyword extraction / TF-IDF analysis
-3. Topic modeling (LDA or BERTopic) to identify subtopics
-4. Word cloud visualization
-5. Text summarization or classification experiments
+1. Text preprocessing - cleaning, tokenization, penghapusan stopword
+2. Ekstraksi kata kunci / analisis TF-IDF
+3. Topic modeling (LDA atau BERTopic) untuk menemukan subtopik
+4. Visualisasi word cloud
+5. Eksperimen peringkasan teks atau klasifikasi
 
 ## Author
 
 Muhammad Danu Setiawan
 
-## License
+## Lisensi
 
-This project is open source and available for learning purposes. The collected Wikipedia content remains licensed under CC BY-SA; please attribute Wikipedia when reusing the dataset.
+Project ini bersifat open source dan tersedia untuk keperluan pembelajaran. Konten Wikipedia yang dikumpulkan tetap berlisensi CC BY-SA; mohon cantumkan atribusi ke Wikipedia saat menggunakan ulang dataset ini.
